@@ -3,3 +3,4 @@
 rm -f /etc/hosts
 cp /etc/hosts.bak /etc/hosts
 rm -f /etc/profile.d/no-distract
+rm -rf /usr/local/bin/no-distract
