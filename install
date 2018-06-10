@@ -1,3 +1,4 @@
 #!/bin/bash
 
-ln -s /home/pungi-man/Codes/no-distract/no-distract /etc/profile.d/no-distract
+sudo ln -s -f $PWD/no-distract /etc/profile.d/no-distract
+ln -s -f $PWD/no-distract /usr/local/bin/no-distract
