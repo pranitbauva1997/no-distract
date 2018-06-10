@@ -39,7 +39,11 @@ sudo ./install
 **Note:** This starts the script on boot so whenever you start your computer,
 all the websites you mentioned in `ban.txt` would be blocked by default.
 
-# How to use
+### Uninstall
+
+```
+sudo ./uninstall
+```
 
 ### Unblock
 
