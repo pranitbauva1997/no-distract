@@ -1,14 +1,14 @@
 #!/bin/bash
 
 activate() {
-	cat 1.txt >/etc/hosts
-	cat ban.txt >>/etc/hosts
-	cat 2.txt >>/etc/hosts
+	cat $HOME/Codes/no-distract/1.txt >/etc/hosts
+	cat $HOME/Codes/no-distract/ban.txt >>/etc/hosts
+	cat $HOME/Codes/no-distract/2.txt >>/etc/hosts
 }
 
 deactivate() {
-	cat 1.txt >/etc/hosts
-	cat 2.txt >>/etc/hosts
+	cat $HOME/Codes/no-distract/1.txt >/etc/hosts
+	cat $HOME/Codes/no-distract/2.txt >>/etc/hosts
 }
 
 if [ $1 == "on" ]; then activate; fi
