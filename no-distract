@@ -1,0 +1,20 @@
+#!/bin/bash
+
+activate() {
+	cat 1.txt >/etc/hosts
+	cat ban.txt >>/etc/hosts
+	cat 2.txt >>/etc/hosts
+}
+
+deactivate() {
+	cat 1.txt >/etc/hosts
+	cat 2.txt >>/etc/hosts
+}
+
+if [ $1 == "on" ]; then activate; fi
+
+if [ $1 == "off" ]; then deactivate; fi
+
+if ! test -n $1; then activate; fi
+
+/etc/init.d/nscd restart

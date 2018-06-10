@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -f /etc/hosts
+cp /etc/hosts.bak /etc/hosts
+rm -f /etc/profile.d/no-distract
